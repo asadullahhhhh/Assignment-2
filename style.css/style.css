@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", serif;
+}
+:root{
+    --footerBackground : rgb(1, 172, 253);
+    --yellow : rgb(254, 163, 1);
+    --colorThree : rgb(5, 212, 223);
+    --colorFour : rgb(93, 88, 239);
+    --white : rgb(255, 255, 255);
+    --bannerTextColor : rgb(17, 17, 17);
+    --balck : rgb(0, 0, 0);
+}
+/* ============================================================================================= 
+                                        Header Section                                          
+================================================================================================*/
+.header{
+    max-width: 1160px;
+    margin: auto;
+}
+
+/* =================================== Navbar Section ========================================= */
+.navbar{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .nav_icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.nav_icon h2{
+    font-size: 2rem;
+}
+.nav_manu ul{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.nav_manu ul li{
+    list-style: none;
+}
+.nav_manu ul li a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.nav_contact button{
+    font-size: 1.25rem;
+    padding: 8px 60px;
+    border-radius: 12px;
+    color: var(--white);
+    background-color: var(--yellow);
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.nav_contact button:hover{
+    background-color: var(--white);
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
+}
+/* ***************************** nav list color class ************************ */
+.yellow{
+    color: var(--yellow);
+}
+.blue{
+    color: var(--footerBackground);
+}
+.green{
+    color: var(--colorThree);
+}
+.purple{
+    color: var(--colorFour);
+}
+/* ============================ End nav list color class ************************ */
+.ham_manu,
+#checkbox,
+.nav_manu ul li:nth-child(5){
+    display: none;
+}
+
+/* =========================== Banner Section =================================== */
+.banner_area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.banner_titles h2{
+    font-size: 3.5rem;
+}
+.banner_titles p{
+    margin: 24px 0;
+    color: var(--bannerTextColor);
+    font-size: 1.25rem;
+    line-height: 25px;
+}
+.banner_titles button{
+    padding: 10px 30px;
+    border: 1px solid transparent;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 12px;
+    background-color: var(--balck);
+    color: var(--white);
+    cursor: pointer;
+}
+.banner_titles button:hover{
+    background-color: var(--white);
+    color: var(--balck);
+    border: 1px solid var(--balck);
+}
+marquee{
+    margin-top: 50px;
+    background-color: #fbfbfb;
+    padding: 10px 20px;
+    border-radius: 33px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================================================================================
+                                        Responsive codes
+================================================================================================ */
+@media screen and (max-width:576px) {
+    /* -------------------------------- Navbar ------------------------------------------------- */
+    .navbar{
+        position: relative;
+        padding: 10px;
+        border-bottom: 0.5px solid var(--yellow);
+    }
+    .nav_icon h2,
+    .nav_contact button{
+        display: none;
+    }
+    .nav_manu{
+        position: absolute;
+        top: 100%;
+        left: -300px;
+        width: 300px;
+        background-color: #fafafa;
+        height: 91vh;
+        transition: 0.5s;
+    }
+    .nav_manu ul{
+        display: block;
+        padding-top: 20px;
+        gap: 10px;
+    }  
+    .nav_manu ul li{
+        padding: 10px 0;
+        text-align: center;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    .nav_manu ul li:hover a{
+        color: var(--yellow);
+    }
+    .nav_manu ul li a{
+        color: #000;
+        font-size: 1rem;
+    }
+    .nav_manu ul li:nth-child(5){
+        display: block;
+    }
+    .nav_manu ul li:nth-child(5) button{
+        font-size: 1rem;
+        padding: 8px 60px;
+        border-radius: 12px;
+        color: var(--white);
+        background-color: var(--yellow);
+        font-weight: 600;
+        cursor: pointer;
+        border: 1px solid transparent;
+    }
+    .nav_manu ul li:nth-child(5) button:hover{
+        background-color: var(--white);
+        color: var(--yellow);
+        border: 1px solid var(--yellow);
+    }
+    .ham_manu{
+        display: block;
+        height: 30px;
+        width: 40px;
+        position: relative;
+        cursor: pointer;
+    }
+    .ham_common{
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        border-radius: 20px;
+        background-color: #000;
+    }
+    .top{
+        top: 18%;
+    }
+    .middle{
+        top: 50%;
+    }
+    .bottom{
+        bottom: 0;
+    }
+    #checkbox:checked ~ .nav_manu{
+        left: 0;
+    }
+    /* -------------------------------- Banner Area ------------------------------- */
+    .banner{
+        padding: 20px;
+    }
+    .banner_area{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .banner_image img{
+        width: 100%;
+    }
+    .banner_titles h2{
+        font-size: 2rem;
+    }
+    .banner_titles p{
+        font-size: 1rem;
+    }
+}
