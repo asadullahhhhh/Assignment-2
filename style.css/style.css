@@ -11,6 +11,9 @@
     --white : rgb(255, 255, 255);
     --bannerTextColor : rgb(17, 17, 17);
     --balck : rgb(0, 0, 0);
+    --cardTextColor : rgb(128, 128, 128);
+    --blue : rgb(100, 200, 255);
+    --cardThreeColor : rgb(135, 0, 255);
 }
 /* ============================================================================================= 
                                         Header Section                                          
@@ -118,14 +121,112 @@
 marquee{
     margin-top: 50px;
     background-color: #fbfbfb;
-    padding: 10px 20px;
+    padding: 10px 0;
     border-radius: 33px;
 }
-
-
-
-
-
+/* =================================================================================================== 
+                                            Main area 
+=======================================================================================================*/
+.main{
+    max-width: 1160px;
+    margin: 60px auto 0;
+    background: url("../assets/bg.png") no-repeat ;
+}
+ /* ======================================= Curriculam Section ========================================== */
+ .curriculam_cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+ }
+.card{
+    text-align: center;
+    border-radius: 18px;
+}
+.curiculam_titile h2{
+    font-size: 2.875rem;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.card img{
+    margin: 53px 0 32px;
+}
+.card h2{
+    font-size: 1.5rem;
+}
+.card p{
+    font-size: 1rem;
+    font-family: "Raleway", serif;
+    color: var(--cardTextColor);
+    line-height: 28px;
+    margin: 34px 40px;
+}
+.card button{
+    border: none;
+    background: none;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 58px;
+    cursor: pointer;
+}
+.card:nth-child(1){
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05)
+}
+.card:nth-child(1) button{
+    color: var(--blue);
+}
+.card:nth-child(2){
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255)
+}
+.card:nth-child(2) button{
+    color: var(--yellow);
+}
+.card:nth-child(3){
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255)
+}
+.card:nth-child(3) button{
+    color: var(--cardThreeColor);
+}
+.arrow_area{
+    margin-top: 80px;
+}
+.aro{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.comman{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.comman:hover{
+    transform: scale(1.1);
+}
+.arrow {
+    border: solid var(--white);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 8px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
 
 
 
