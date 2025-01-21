@@ -382,4 +382,19 @@ marquee{
     .banner_titles p{
         font-size: 1rem;
     }
+    /* -------------------------------- Curriculam Card Section -------------------------- */
+    .curriculam{
+        padding: 0 20px;
+    }
+    .curiculam_titile h2{
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+    }
+    .curriculam_cards{
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+    .arrow_area{
+        display: none;
+    }
 }
