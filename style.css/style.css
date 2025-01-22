@@ -14,6 +14,9 @@
     --cardTextColor : rgb(128, 128, 128);
     --blue : rgb(100, 200, 255);
     --cardThreeColor : rgb(135, 0, 255);
+    --cardOneColor : rgb(60, 216, 232);
+    --cardTextColor : rgb(102, 102, 102);
+    --cardTwoColor: rgb(149, 178, 38);
 }
 /* ============================================================================================= 
                                         Header Section                                          
@@ -128,11 +131,14 @@ marquee{
                                             Main area 
 =======================================================================================================*/
 .main{
-    max-width: 1160px;
-    margin: 60px auto 0;
-    background: url("../assets/bg.png") no-repeat ;
+    background: url("../assets/bg.png") no-repeat;
+    margin-top: 60px;
 }
  /* ======================================= Curriculam Section ========================================== */
+ .curriculam{ 
+    max-width: 1140px;
+    margin: 0 auto;
+ }
  .curriculam_cards{
     display: flex;
     justify-content: space-between;
@@ -227,6 +233,174 @@ marquee{
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
   }
+  /*============================================================================
+                                Stroy Section 
+================================================================================= */
+.stories{
+    background: url("../assets/bg.png"),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%) ;
+    margin-top: 60px;
+}
+.story_margin{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.stories h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.stories_card_area{
+    display: flex;
+    gap: 18px;
+    margin-bottom: 80px;
+}
+.story_card_image img{
+    display: block; 
+    border-radius: 16px 16px 0 0;
+}
+.bigger_card_text{
+    background-color: var(--white);
+    padding: 55px 40px 34px;
+    border-radius: 0 0 16px 16px;
+}
+.bigger_card_text h4{
+    font-size: 1.5rem;
+    margin-bottom: 41px;
+}
+.bigger_card_text p{
+    font-size: 1rem;
+    line-height: 30px;
+    color: var(--cardTextColor);
+}
+.common_image{
+    position: relative;
+}
+.absolute{
+    font-family: "Raleway", serif;
+    font-size: 1rem;
+    background-color: var(--cardOneColor);
+    padding: 10px 30px;
+    color: var(--white);
+    border-radius: 40px;
+    position: absolute;
+    top: 94%;
+    left: 5%
+}
+.absolute2{
+    font-family: "Raleway", serif;
+    font-size: 0.8rem;
+    background-color: var(--cardTwoColor);
+    padding: 10px 15px;
+    color: var(--white);
+    border-radius: 40px;
+    position: absolute;
+    top: 90%;
+    left: 12%;
+}
+.absolute2color2{
+    background-color: var(--colorFour);
+}
+.stroy_card_two{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 19px;
+}
+.left_story_image img{
+    border-radius: 16px 16px 0 0;
+    display: block;
+}
+.left_story_text{
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 0 0 16px 16px;
+}
+.left_story_text h4{
+    font-size: 1rem;
+}
+.displayNone{
+    display: none;
+}
+.buton{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.buton button{
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 10px 40px;
+    border: 1px solid transparent;
+    background-color: var(--balck);
+    color: var(--white);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.buton button:hover{
+    border: 1px solid var(--balck);
+    background-color: transparent;
+    color: var(--balck);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
