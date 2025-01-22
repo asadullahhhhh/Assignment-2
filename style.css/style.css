@@ -652,4 +652,15 @@ marquee{
         font-size: 0.56rem;
         top: 85%;
     }
+    /* ---------------------------------------- Footer Section ----------------------------------- */
+    .footer{
+        padding: 60px 0;
+    }
+    .footer_container{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .footer_About_School{
+        margin: 32px 0;
+    }
 }
