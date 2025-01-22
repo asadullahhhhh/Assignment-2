@@ -585,6 +585,9 @@ marquee{
     .story_card_one{
         display: none;
     }
+    .stroy_card_two {
+        gap: 10px;
+    }
     .left_story_image img{
         width: 100%;
     }
