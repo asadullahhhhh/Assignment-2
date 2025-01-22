@@ -571,4 +571,33 @@ marquee{
     .arrow_area{
         display: none;
     }
+    /* ------------------------------ Stroy Section --------------------------------------- */
+    .stories{
+        padding: 0 20px;
+    }
+    .story_margin h2{
+        margin-bottom: 20px;
+    }
+    .stories_card_area{
+        margin-bottom: 30px;
+    }
+    .story_card_one{
+        display: none;
+    }
+    .left_story_image img{
+        width: 100%;
+    }
+    .left_story_text{
+        padding: 40px 20px 20px;
+    }
+    .displayNone{
+        display: block;
+    }
+    .left_story_text h4{
+        font-size: 0.56rem;
+    }
+    .absolute2{
+        font-size: 0.56rem;
+        top: 85%;
+    }
 }
