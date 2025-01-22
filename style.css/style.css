@@ -340,10 +340,58 @@ marquee{
     background-color: transparent;
     color: var(--balck);
 }
-
-
-
-
+/* ===============================================================================================
+                                        Footer Container 
+================================================================================================== */
+.footer{
+    background-color: var(--footerBackground);
+    color: var(--white);
+    padding: 123px 0 174px;
+}
+.footer_container{
+    max-width: 1070px;
+    margin: 0 auto;
+    display: flex;
+}
+.kids_education{
+    flex: 1;
+}
+.kids_education p{
+    max-width: 400px;
+    margin-top: 35px;
+    font-size: 1.25rem;
+}
+.footer_logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer_logo img{
+    height: 90px;
+}
+.footer_About_School{
+    margin-right: 140px;
+}
+.footer_About_School h2{
+    font-size: 1.5rem;
+    margin-bottom: 32px;
+}
+.footer_About_School ul li{
+    list-style: none;
+    padding: 10px 0;
+}
+.footer_About_School ul li a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: var(--white);
+    font-weight: 500;
+}
+.footer_flex_logo{
+    margin-top: 32px;
+}
+.footer_flex_logo img{
+    margin-right: 10px;
+}
 
 
 
