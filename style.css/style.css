@@ -1,62 +1,460 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Quicksand", serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", serif;
 }
-:root{
-    --footerBackground : rgb(1, 172, 253);
-    --yellow : rgb(254, 163, 1);
-    --colorThree : rgb(5, 212, 223);
-    --colorFour : rgb(93, 88, 239);
-    --white : rgb(255, 255, 255);
-    --bannerTextColor : rgb(17, 17, 17);
-    --balck : rgb(0, 0, 0);
-    --cardTextColor : rgb(128, 128, 128);
-    --blue : rgb(100, 200, 255);
-    --cardThreeColor : rgb(135, 0, 255);
-    --cardOneColor : rgb(60, 216, 232);
-    --cardTextColor : rgb(102, 102, 102);
-    --cardTwoColor: rgb(149, 178, 38);
+:root {
+  --footerBackground: rgb(1, 172, 253);
+  --yellow: rgb(254, 163, 1);
+  --colorThree: rgb(5, 212, 223);
+  --colorFour: rgb(93, 88, 239);
+  --white: rgb(255, 255, 255);
+  --bannerTextColor: rgb(17, 17, 17);
+  --balck: rgb(0, 0, 0);
+  --cardTextColor: rgb(128, 128, 128);
+  --blue: rgb(100, 200, 255);
+  --cardThreeColor: rgb(135, 0, 255);
+  --cardOneColor: rgb(60, 216, 232);
+  --cardTextColor: rgb(102, 102, 102);
+  --cardTwoColor: rgb(149, 178, 38);
 }
 /* ============================================================================================= 
                                         Header Section                                          
 ================================================================================================*/
-.header{
-    max-width: 1160px;
-    margin: auto;
+.header {
+  max-width: 1160px;
+  margin: auto;
 }
 
 /* =================================== Navbar Section ========================================= */
-.navbar{
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.navbar .nav_icon{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.navbar .nav_icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.nav_icon h2 {
+  font-size: 2rem;
+}
+.nav_manu ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.nav_manu ul li {
+  list-style: none;
+}
+.nav_manu ul li a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.nav_contact button {
+  font-size: 1.25rem;
+  padding: 8px 60px;
+  border-radius: 12px;
+  color: var(--white);
+  background-color: var(--yellow);
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.nav_contact button:hover {
+  background-color: var(--white);
+  color: var(--yellow);
+  border: 1px solid var(--yellow);
+}
+/* ***************************** nav list color class ************************ */
+.yellow {
+  color: var(--yellow);
+}
+.blue {
+  color: var(--footerBackground);
+}
+.green {
+  color: var(--colorThree);
+}
+.purple {
+  color: var(--colorFour);
+}
+/* ============================ End nav list color class ************************ */
+.ham_manu,
+#checkbox,
+.nav_manu ul li:nth-child(5) {
+  display: none;
+}
+
+/* =========================== Banner Section =================================== */
+.banner_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.banner_titles h2 {
+  font-size: 3.5rem;
+}
+.banner_titles p {
+  margin: 24px 0;
+  color: var(--bannerTextColor);
+  font-size: 1.25rem;
+  line-height: 25px;
+}
+.banner_titles button {
+  padding: 10px 30px;
+  border: 1px solid transparent;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 12px;
+  background-color: var(--balck);
+  color: var(--white);
+  cursor: pointer;
+}
+.banner_titles button:hover {
+  background-color: var(--white);
+  color: var(--balck);
+  border: 1px solid var(--balck);
+}
+marquee {
+  margin-top: 50px;
+  background-color: #fbfbfb;
+  padding: 10px 0;
+  border-radius: 33px;
+}
+/* =================================================================================================== 
+                                            Main area 
+=======================================================================================================*/
+.main {
+  background: url("../assets/bg.png") no-repeat;
+  margin-top: 60px;
+}
+/* ======================================= Curriculam Section ========================================== */
+.curriculam {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.curriculam_cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+}
+.card {
+  text-align: center;
+  border-radius: 18px;
+}
+.curiculam_titile h2 {
+  font-size: 2.875rem;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.card img {
+  margin: 53px 0 32px;
+}
+.card h2 {
+  font-size: 1.5rem;
+}
+.card p {
+  font-size: 1rem;
+  font-family: "Raleway", serif;
+  color: var(--cardTextColor);
+  line-height: 28px;
+  margin: 34px 40px;
+}
+.card button {
+  border: none;
+  background: none;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 58px;
+  cursor: pointer;
+}
+.card:nth-child(1) {
+  background: linear-gradient(
+      180deg,
+      rgb(222, 245, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+}
+.card:nth-child(1) button {
+  color: var(--blue);
+}
+.card:nth-child(2) {
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(255, 244, 220),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+.card:nth-child(2) button {
+  color: var(--yellow);
+}
+.card:nth-child(3) {
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(238, 225, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+.card:nth-child(3) button {
+  color: var(--cardThreeColor);
+}
+.arrow_area {
+  margin-top: 80px;
+}
+.aro {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.comman {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.comman:hover {
+  transform: scale(1.1);
+}
+.arrow {
+  border: solid var(--white);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 8px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+/*============================================================================
+                                Stroy Section 
+================================================================================= */
+.stories {
+  background: url("../assets/bg.png"),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+  margin-top: 60px;
+}
+.story_margin {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.stories h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.stories_card_area {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 80px;
+}
+.story_card_image img {
+  display: block;
+  border-radius: 16px 16px 0 0;
+}
+.bigger_card_text {
+  background-color: var(--white);
+  padding: 55px 40px 34px;
+  border-radius: 0 0 16px 16px;
+}
+.bigger_card_text h4 {
+  font-size: 1.5rem;
+  margin-bottom: 41px;
+}
+.bigger_card_text p {
+  font-size: 1rem;
+  line-height: 30px;
+  color: var(--cardTextColor);
+}
+.common_image {
+  position: relative;
+}
+.absolute {
+  font-family: "Raleway", serif;
+  font-size: 1rem;
+  background-color: var(--cardOneColor);
+  padding: 10px 30px;
+  color: var(--white);
+  border-radius: 40px;
+  position: absolute;
+  top: 94%;
+  left: 5%;
+}
+.absolute2 {
+  font-family: "Raleway", serif;
+  font-size: 0.8rem;
+  background-color: var(--cardTwoColor);
+  padding: 10px 15px;
+  color: var(--white);
+  border-radius: 40px;
+  position: absolute;
+  top: 90%;
+  left: 12%;
+}
+.absolute2color2 {
+  background-color: var(--colorFour);
+}
+.stroy_card_two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 19px;
+}
+.left_story_image img {
+  border-radius: 16px 16px 0 0;
+  display: block;
+}
+.left_story_text {
+  background-color: var(--white);
+  padding: 40px;
+  border-radius: 0 0 16px 16px;
+}
+.left_story_text h4 {
+  font-size: 1rem;
+}
+.displayNone {
+  display: none;
+}
+.buton {
+  text-align: center;
+  padding-bottom: 60px;
+}
+.buton button {
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 10px 40px;
+  border: 1px solid transparent;
+  background-color: var(--balck);
+  color: var(--white);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.buton button:hover {
+  border: 1px solid var(--balck);
+  background-color: transparent;
+  color: var(--balck);
+}
+/* ===============================================================================================
+                                        Footer Container 
+================================================================================================== */
+.footer {
+  background-color: var(--footerBackground);
+  color: var(--white);
+  padding: 123px 0 174px;
+}
+.footer_container {
+  max-width: 1070px;
+  margin: 0 auto;
+  display: flex;
+}
+.kids_education {
+  flex: 1;
+}
+.kids_education p {
+  max-width: 400px;
+  margin-top: 35px;
+  font-size: 1.25rem;
+}
+.footer_logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer_logo img {
+  height: 90px;
+}
+.footer_About_School {
+  margin-right: 140px;
+}
+.footer_About_School h2 {
+  font-size: 1.5rem;
+  margin-bottom: 32px;
+}
+.footer_About_School ul li {
+  list-style: none;
+  padding: 10px 0;
+}
+.footer_About_School ul li a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: var(--white);
+  font-weight: 500;
+}
+.footer_flex_logo {
+  margin-top: 32px;
+}
+.footer_flex_logo img {
+  margin-right: 10px;
+}
+
+/* =============================================================================================
+                                        Responsive codes
+================================================================================================ */
+@media screen and (max-width: 576px) {
+  /* -------------------------------- Navbar ------------------------------------------------- */
+  .navbar {
+    position: relative;
+    padding: 10px;
+    border-bottom: 0.5px solid var(--yellow);
+  }
+  .nav_icon h2,
+  .nav_contact button {
+    display: none;
+  }
+  .nav_manu {
+    position: absolute;
+    top: 100%;
+    left: -300px;
+    width: 300px;
+    background-color: #fafafa;
+    height: 91vh;
+    transition: 0.5s;
+  }
+  .nav_manu ul {
+    display: block;
+    padding-top: 20px;
+    gap: 10px;
+  }
+  .nav_manu ul li {
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 10px;
     cursor: pointer;
-}
-.nav_icon h2{
-    font-size: 2rem;
-}
-.nav_manu ul{
-    display: flex;
-    align-items: center;
-    gap: 32px;
-}
-.nav_manu ul li{
-    list-style: none;
-}
-.nav_manu ul li a{
-    text-decoration: none;
-    font-size: 1.25rem;
-    font-weight: 700;
-}
-.nav_contact button{
-    font-size: 1.25rem;
+  }
+  .nav_manu ul li:hover a {
+    color: var(--yellow);
+  }
+  .nav_manu ul li a {
+    color: #000;
+    font-size: 1rem;
+  }
+  .nav_manu ul li:nth-child(5) {
+    display: block;
+  }
+  .nav_manu ul li:nth-child(5) button {
+    font-size: 1rem;
     padding: 8px 60px;
     border-radius: 12px;
     color: var(--white);
@@ -64,603 +462,112 @@
     font-weight: 600;
     cursor: pointer;
     border: 1px solid transparent;
-}
-.nav_contact button:hover{
+  }
+  .nav_manu ul li:nth-child(5) button:hover {
     background-color: var(--white);
     color: var(--yellow);
     border: 1px solid var(--yellow);
-}
-/* ***************************** nav list color class ************************ */
-.yellow{
-    color: var(--yellow);
-}
-.blue{
-    color: var(--footerBackground);
-}
-.green{
-    color: var(--colorThree);
-}
-.purple{
-    color: var(--colorFour);
-}
-/* ============================ End nav list color class ************************ */
-.ham_manu,
-#checkbox,
-.nav_manu ul li:nth-child(5){
-    display: none;
-}
-
-/* =========================== Banner Section =================================== */
-.banner_area{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-}
-.banner_titles h2{
-    font-size: 3.5rem;
-}
-.banner_titles p{
-    margin: 24px 0;
-    color: var(--bannerTextColor);
-    font-size: 1.25rem;
-    line-height: 25px;
-}
-.banner_titles button{
-    padding: 10px 30px;
-    border: 1px solid transparent;
-    font-size: 1.1rem;
-    font-weight: 700;
-    border-radius: 12px;
-    background-color: var(--balck);
-    color: var(--white);
-    cursor: pointer;
-}
-.banner_titles button:hover{
-    background-color: var(--white);
-    color: var(--balck);
-    border: 1px solid var(--balck);
-}
-marquee{
-    margin-top: 50px;
-    background-color: #fbfbfb;
-    padding: 10px 0;
-    border-radius: 33px;
-}
-/* =================================================================================================== 
-                                            Main area 
-=======================================================================================================*/
-.main{
-    background: url("../assets/bg.png") no-repeat;
-    margin-top: 60px;
-}
- /* ======================================= Curriculam Section ========================================== */
- .curriculam{ 
-    max-width: 1140px;
-    margin: 0 auto;
- }
- .curriculam_cards{
-    display: flex;
-    justify-content: space-between;
-    gap: 28px;
- }
-.card{
-    text-align: center;
-    border-radius: 18px;
-}
-.curiculam_titile h2{
-    font-size: 2.875rem;
-    text-align: center;
-    margin-bottom: 80px;
-}
-.card img{
-    margin: 53px 0 32px;
-}
-.card h2{
-    font-size: 1.5rem;
-}
-.card p{
-    font-size: 1rem;
-    font-family: "Raleway", serif;
-    color: var(--cardTextColor);
-    line-height: 28px;
-    margin: 34px 40px;
-}
-.card button{
-    border: none;
-    background: none;
-    font-size: 1rem;
-    font-weight: 700;
-    margin-bottom: 58px;
-    cursor: pointer;
-}
-.card:nth-child(1){
-    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
-    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05)
-}
-.card:nth-child(1) button{
-    color: var(--blue);
-}
-.card:nth-child(2){
-    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
-    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255)
-}
-.card:nth-child(2) button{
-    color: var(--yellow);
-}
-.card:nth-child(3){
-    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
-    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255)
-}
-.card:nth-child(3) button{
-    color: var(--cardThreeColor);
-}
-.arrow_area{
-    margin-top: 80px;
-}
-.aro{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-.comman{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    background-color: var(--yellow);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.2s;
-}
-.comman:hover{
-    transform: scale(1.1);
-}
-.arrow {
-    border: solid var(--white);
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 8px;
   }
-  
-  .right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-  }
-  
-  .left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-  }
-  /*============================================================================
-                                Stroy Section 
-================================================================================= */
-.stories{
-    background: url("../assets/bg.png"),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%) ;
-    margin-top: 60px;
-}
-.story_margin{
-    max-width: 1140px;
-    margin: 0 auto;
-}
-.stories h2{
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 80px;
-}
-.stories_card_area{
-    display: flex;
-    gap: 18px;
-    margin-bottom: 80px;
-}
-.story_card_image img{
-    display: block; 
-    border-radius: 16px 16px 0 0;
-}
-.bigger_card_text{
-    background-color: var(--white);
-    padding: 55px 40px 34px;
-    border-radius: 0 0 16px 16px;
-}
-.bigger_card_text h4{
-    font-size: 1.5rem;
-    margin-bottom: 41px;
-}
-.bigger_card_text p{
-    font-size: 1rem;
-    line-height: 30px;
-    color: var(--cardTextColor);
-}
-.common_image{
-    position: relative;
-}
-.absolute{
-    font-family: "Raleway", serif;
-    font-size: 1rem;
-    background-color: var(--cardOneColor);
-    padding: 10px 30px;
-    color: var(--white);
-    border-radius: 40px;
-    position: absolute;
-    top: 94%;
-    left: 5%
-}
-.absolute2{
-    font-family: "Raleway", serif;
-    font-size: 0.8rem;
-    background-color: var(--cardTwoColor);
-    padding: 10px 15px;
-    color: var(--white);
-    border-radius: 40px;
-    position: absolute;
-    top: 90%;
-    left: 12%;
-}
-.absolute2color2{
-    background-color: var(--colorFour);
-}
-.stroy_card_two{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 19px;
-}
-.left_story_image img{
-    border-radius: 16px 16px 0 0;
+  .ham_manu {
     display: block;
-}
-.left_story_text{
-    background-color: var(--white);
-    padding: 40px;
-    border-radius: 0 0 16px 16px;
-}
-.left_story_text h4{
-    font-size: 1rem;
-}
-.displayNone{
-    display: none;
-}
-.buton{
-    text-align: center;
-    padding-bottom: 60px;
-}
-.buton button{
-    font-size: 1.1rem;
-    font-weight: 700;
-    padding: 10px 40px;
-    border: 1px solid transparent;
-    background-color: var(--balck);
-    color: var(--white);
-    border-radius: 12px;
+    height: 30px;
+    width: 40px;
+    position: relative;
     cursor: pointer;
-    transition: 0.2s;
-}
-.buton button:hover{
-    border: 1px solid var(--balck);
-    background-color: transparent;
-    color: var(--balck);
-}
-/* ===============================================================================================
-                                        Footer Container 
-================================================================================================== */
-.footer{
-    background-color: var(--footerBackground);
-    color: var(--white);
-    padding: 123px 0 174px;
-}
-.footer_container{
-    max-width: 1070px;
-    margin: 0 auto;
-    display: flex;
-}
-.kids_education{
-    flex: 1;
-}
-.kids_education p{
-    max-width: 400px;
-    margin-top: 35px;
-    font-size: 1.25rem;
-}
-.footer_logo{
-    display: flex;
-    align-items: center;
+  }
+  .ham_common {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 20px;
+    background-color: #000;
+  }
+  .top {
+    top: 18%;
+  }
+  .middle {
+    top: 50%;
+  }
+  .bottom {
+    bottom: 0;
+  }
+  #checkbox:checked ~ .nav_manu {
+    left: 0;
+  }
+  /* -------------------------------- Banner Area ------------------------------- */
+  .banner {
+    padding: 20px;
+  }
+  .banner_area {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .banner_image img {
+    width: 100%;
+  }
+  .banner_titles h2 {
+    font-size: 2rem;
+  }
+  .banner_titles p {
+    font-size: 1rem;
+  }
+  /* -------------------------------- Curriculam Card Section -------------------------- */
+  .curriculam {
+    padding: 0 20px;
+  }
+  .curiculam_titile h2 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
+  .curriculam_cards {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  .arrow_area {
+    display: none;
+  }
+  /* ------------------------------ Stroy Section --------------------------------------- */
+  .stories {
+    padding: 0 20px;
+  }
+  .story_margin h2 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
+  .stories_card_area {
+    margin-bottom: 30px;
+  }
+  .story_card_one {
+    display: none;
+  }
+  .stroy_card_two {
     gap: 10px;
-}
-.footer_logo img{
-    height: 90px;
-}
-.footer_About_School{
-    margin-right: 140px;
-}
-.footer_About_School h2{
-    font-size: 1.5rem;
-    margin-bottom: 32px;
-}
-.footer_About_School ul li{
-    list-style: none;
-    padding: 10px 0;
-}
-.footer_About_School ul li a{
-    text-decoration: none;
-    font-size: 1.25rem;
-    color: var(--white);
-    font-weight: 500;
-}
-.footer_flex_logo{
-    margin-top: 32px;
-}
-.footer_flex_logo img{
-    margin-right: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* =============================================================================================
-                                        Responsive codes
-================================================================================================ */
-@media screen and (max-width:576px) {
-    /* -------------------------------- Navbar ------------------------------------------------- */
-    .navbar{
-        position: relative;
-        padding: 10px;
-        border-bottom: 0.5px solid var(--yellow);
-    }
-    .nav_icon h2,
-    .nav_contact button{
-        display: none;
-    }
-    .nav_manu{
-        position: absolute;
-        top: 100%;
-        left: -300px;
-        width: 300px;
-        background-color: #fafafa;
-        height: 91vh;
-        transition: 0.5s;
-    }
-    .nav_manu ul{
-        display: block;
-        padding-top: 20px;
-        gap: 10px;
-    }  
-    .nav_manu ul li{
-        padding: 10px 0;
-        text-align: center;
-        margin-bottom: 10px;
-        cursor: pointer;
-    }
-    .nav_manu ul li:hover a{
-        color: var(--yellow);
-    }
-    .nav_manu ul li a{
-        color: #000;
-        font-size: 1rem;
-    }
-    .nav_manu ul li:nth-child(5){
-        display: block;
-    }
-    .nav_manu ul li:nth-child(5) button{
-        font-size: 1rem;
-        padding: 8px 60px;
-        border-radius: 12px;
-        color: var(--white);
-        background-color: var(--yellow);
-        font-weight: 600;
-        cursor: pointer;
-        border: 1px solid transparent;
-    }
-    .nav_manu ul li:nth-child(5) button:hover{
-        background-color: var(--white);
-        color: var(--yellow);
-        border: 1px solid var(--yellow);
-    }
-    .ham_manu{
-        display: block;
-        height: 30px;
-        width: 40px;
-        position: relative;
-        cursor: pointer;
-    }
-    .ham_common{
-        position: absolute;
-        width: 100%;
-        height: 5px;
-        border-radius: 20px;
-        background-color: #000;
-    }
-    .top{
-        top: 18%;
-    }
-    .middle{
-        top: 50%;
-    }
-    .bottom{
-        bottom: 0;
-    }
-    #checkbox:checked ~ .nav_manu{
-        left: 0;
-    }
-    /* -------------------------------- Banner Area ------------------------------- */
-    .banner{
-        padding: 20px;
-    }
-    .banner_area{
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    .banner_image img{
-        width: 100%;
-    }
-    .banner_titles h2{
-        font-size: 2rem;
-    }
-    .banner_titles p{
-        font-size: 1rem;
-    }
-    /* -------------------------------- Curriculam Card Section -------------------------- */
-    .curriculam{
-        padding: 0 20px;
-    }
-    .curiculam_titile h2{
-        font-size: 1.7rem;
-        margin-bottom: 20px;
-    }
-    .curriculam_cards{
-        flex-direction: column;
-        margin-bottom: 60px;
-    }
-    .arrow_area{
-        display: none;
-    }
-    /* ------------------------------ Stroy Section --------------------------------------- */
-    .stories{
-        padding: 0 20px;
-    }
-    .story_margin h2{
-        font-size: 1.7rem;
-        margin-bottom: 20px;
-    }
-    .stories_card_area{
-        margin-bottom: 30px;
-    }
-    .story_card_one{
-        display: none;
-    }
-    .stroy_card_two {
-        gap: 10px;
-    }
-    .left_story_image img{
-        width: 100%;
-    }
-    .left_story_text{
-        padding: 40px 20px 20px;
-    }
-    .displayNone{
-        display: block;
-    }
-    .left_story_text h4{
-        font-size: 0.56rem;
-    }
-    .absolute2{
-        font-size: 0.56rem;
-        top: 85%;
-    }
-    /* ---------------------------------------- Footer Section ----------------------------------- */
-    .footer{
-        padding: 60px 0;
-    }
-    .footer_container{
-        flex-direction: column;
-        padding: 0 20px;
-    }
-    .footer_About_School{
-        margin: 32px 0;
-    }
+  }
+  .left_story_image img {
+    width: 100%;
+  }
+  .left_story_text {
+    padding: 40px 20px 20px;
+  }
+  .displayNone {
+    display: block;
+  }
+  .left_story_text h4 {
+    font-size: 0.56rem;
+  }
+  .absolute2 {
+    font-size: 0.56rem;
+    top: 85%;
+  }
+  /* ---------------------------------------- Footer Section ----------------------------------- */
+  .footer {
+    padding: 60px 0;
+  }
+  .footer_container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .footer_About_School {
+    margin: 32px 0;
+  }
 }
